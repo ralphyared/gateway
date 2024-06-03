@@ -94,4 +94,18 @@ export const routes = [
     methods: ["get"],
     isAuthenticated: true,
   },
+  {
+    api: "/api/v1/initiate-payment",
+    microserviceUrl: `${config().microserviceUrls.payment}/payment/initiate`,
+    microserviceName: "payment",
+    methods: ["get"],
+    isAuthenticated: true,
+  },
+  {
+    api: "/api/v1/execute-payment",
+    microserviceUrl: `${config().microserviceUrls.payment}/payment/execute`,
+    microserviceName: "payment",
+    methods: ["get"],
+    isAuthenticated: true,
+  },
 ];

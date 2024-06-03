@@ -11,6 +11,7 @@ const getDbConfig = () => ({
 const getMicroserviceUrls = () => ({
   idp: process.env.IDP_URL || "http://localhost:3001",
   videoProvider: process.env.VIDEO_PROVIDER_URL || "http://localhost:3002",
+  payment: process.env.PAYMENT_URL || "http://localhost:3003",
 });
 
 export default () => ({
